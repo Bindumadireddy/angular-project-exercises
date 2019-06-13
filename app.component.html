@@ -1,19 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<br>
-<br>
-<br>
+<div  style="text-align:center">
+  <input type="text" disabled [value]="display" >
+  <br>
+ <input *ngIf ="result!=undefined" type="text" disabled [value]="result">
+ <table>
+   <tr><button  (click)="value(1)"><td>1</td></button>
+       <button (click)="value(2)"><td>2</td></button>
+        <button (click)="value(3)"><td>3</td></button>
+        <button (click)="oper('+')"><td>+</td></button>
+</tr>
+      <tr>
+      <button (click)="value(4)"><td>4</td></button>
+        <button (click)="value(5)"><td>5</td></button>
+          <button (click)="value(6)"><td>6</td></button>
+            <button (click)="oper('-')"><td>-</td></button>
+   </tr>
+   <tr>
+      <button (click)="value(7)"><td>7</td></button>
+        <button (click)="value(8)"><td>8</td></button>
+          <button (click)="value(9)"><td>9</td></button>
+            <button (click)="oper('*')"><td>*</td></button>
+   </tr>
+   <tr> 
+      <button (click)="clear('C')"><td>C</td></button>
+        <button (click)="value(0)"><td>0</td></button>
+          <button (click)="evaluate()"><td>=</td></button>
+            <button (click)="oper('/')"><td>/</td></button>
+   </tr>
+ </table>
 
-<div  id="content" style="text-align:center" >
-  <h1>
-    My Account
-  </h1>
-  <h2>${{num}}</h2>
-   
-  <button (click)="mybutton($event)" disabled={{dis}} id="button">Withdraw $10</button>&nbsp; &nbsp; <button (click)="Mybutton($event)" id="buttonn">Deposit $10</button>
-  
-
-</div>
 
 
 
-<router-outlet></router-outlet>
+

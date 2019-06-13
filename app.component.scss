@@ -1,14 +1,8 @@
-#content{
+table,tr,td{
     margin:auto;
-    
-    width: 400px;
-    height: 200px;
-    border:2px solid peachpuff;
-    background-color: peachpuff
+    border:1px solid black;
+    padding:10px
 }
-#button{
-    background-color: yellow;
-}
-#buttonn{
-    background-color: green
+table{
+    border-collapse: collapse
 }
